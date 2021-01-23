@@ -1,0 +1,144 @@
+
+.cardContainer{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    /* font-family: 'Rhodium Libre', serif; */
+  }
+  
+  .card{
+  /*   border:2px solid black; */
+    width:400px;
+    height:300px;
+    border-radius:50px;
+    position:relative;
+    background-color:#E6E6E6;
+  }
+  
+  .cardText{
+    position:absolute;
+    left:10%;
+    top:10%;
+    font-size: 30px;
+    font-weight:bold;
+  }
+  
+  .cardOption{
+    position:absolute;
+    left:90%;
+    top:10%;
+  }
+  
+  .circle1, .circle2, .circle3{
+    border: 2px solid black;
+    width:10px;
+    height:10px;
+    border-radius:50px;
+    background-color:black; 
+    margin-bottom:2px;
+  }
+  
+  .cardTimeContainer, .cardTicketContainer{
+    position:absolute;
+    padding:0.1em;
+    width:5em;
+    height:1em;
+  /*   border:2px solid black; */
+    border-radius:10px;
+  }
+  .cardTimeContainer{
+      top:39%;
+      left:9%;
+      background-color:#F3BEBE;
+  }
+  
+  .cardTimeIconText{
+    font-size:5px;
+    vertical-align:middle;
+    padding-bottom:1.5em;
+  }
+  
+  
+  .cardTicketContainer{
+    top:39%;
+    left:64%;
+    background-color:#BAABF8;
+    text-align:center;
+  }
+  
+  .cardTicketIconText{
+    font-size:5px;
+    margin-bottom:2.5em;
+  }
+  
+  .progressBar{
+    position:absolute;
+    background-color:#CCCCCC;
+    width:68%;
+    height:0.5em;
+    border-radius:11px;
+    top:70%;
+    left:9%;
+  }
+  
+  .progressBar::before{
+    display:block;
+    content:' ';
+    width:75%;
+    height:10px;
+    border-radius:11px;
+    background-color:green;
+  }
+  .percentage{
+    position:absolute;
+    top:67%;
+    left:80%;
+  }
+  
+  
+  .assignee{
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:80%;
+    left:9%;
+    background-color:grey;
+    border-radius:50px;
+    text-align:center;
+  }
+  .assigneeText{
+    display:block;
+    margin-top:0.6em;
+  }
+  .category, .attachments{
+    width:60px;
+    height:20px;
+    border-radius:11px;
+    background-color:green;
+    position:absolute;
+    top:85%;
+    left:40%;
+  }
+  .categoryText{
+    font-size:5px;
+    display:block;
+    margin-left:15px;
+    margin-top:2px;
+  }
+  
+  .attachments{
+    width:56px;
+    left:72%;
+    background-color:#D78DE1;
+  }
+  
+  .attachIcon{
+    display:inline-block;
+    margin-left:5px;
+    margin-top:5px;
+  }
+  .attachmentsText{
+    font-size:5px;
+  }
